@@ -7,42 +7,43 @@
     <title>Todo App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container">
         <div class="head">
             <h1><i class="fa fa-check-circle"></i> My Task</h1>
-            <p>Monday, May 5</p>
+            <p id="date">Monday, May 5</p>
         </div>
+
         <div class="input">
-            <input type="text" name="" id="input-text" placeholder="What do you need to do?">
+            <input type="text" id="input-text" placeholder="What do you need to do?">
             <input type="button" value="+" id="add">
         </div>
-        <div class="button">
-            <input type="button" value="All" id="all-task" class="all-task active">
-            <input type="button" value="Active" id="active-task">
-            <input type="button" value="Completed" id="completed-task">
+
+        <div class="filters">
+            <span class="filter active" data-filter="all"> All </span>
+            <span class="filter" data-filter="active"> Active </span>
+            <span class="filter" data-filter="completed"> Completed </span>
         </div>
+
         <div class="out-put">
-            <ul class="add-task">
+            <ul class="list-task" id="list-task"></ul>
 
-            </ul>
-            <div class="empty-state hidden">
+            <div class="empty-state hidden" id="empty-state">
                 <i class="fas fa-clipboard-list"></i>
-                <p>no task here yet</p>
-            </div> 
-
+                <p>No task here yet</p>
+            </div>
         </div>
+
         <div class="fooder">
-            <p class="task-count" >items left</p>
-            <input type="button" value="Clear completed" class="clear">
+            <p class="task-count" id="task-count">0 items left</p>
+            <input type="button" value="Clear completed" class="clearBtn" id="clearBtn">
         </div>
-
     </div>
-
     <script src="script.js"></script>
-</body>
-
-</html>
+    
+    </body>
