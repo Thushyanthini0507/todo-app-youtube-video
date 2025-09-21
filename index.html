@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1><i class="fa fa-check-circle"></i> My Task</h1>
+            <p>Monday, May 5</p>
+        </div>
+        <div class="input">
+            <input type="text" name="" id="input-text" placeholder="What do you need to do?">
+            <input type="button" value="+" id="add">
+        </div>
+        <div class="button">
+            <input type="button" value="All" id="all-task" class="all-task active">
+            <input type="button" value="Active" id="active-task">
+            <input type="button" value="Completed" id="completed-task">
+        </div>
+        <div class="out-put">
+            <ul class="add-task">
+
+            </ul>
+            <div class="empty-state hidden">
+                <i class="fas fa-clipboard-list"></i>
+                <p>no task here yet</p>
+            </div> 
+
+        </div>
+        <div class="fooder">
+            <p class="task-count" >items left</p>
+            <input type="button" value="Clear completed" class="clear">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f3f5;
+}
+
+
+.container {
+    width: 380px;
+    box-shadow: 0px 0px 5px 1px rgba(92, 91, 91, 0.51);
+    border-radius: 10px;
+    margin: 100px auto;
+}
+
+.head {
+    background-color: #7749f8;
+    padding: 0px 20px;
+    border-radius: 0px;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+
+}
+
+.input {
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(121, 119, 119, 0.211);
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 100%;
+    background-color: rgba(247, 249, 249, 0.725);
+}
+
+#input-text {
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid rgba(141, 140, 140, 0.554);
+    outline: none;
+    margin-left: 5px;
+    padding: 7px;
+}
+
+#input-text:focus {
+    border: 1px solid rgba(237, 157, 253, 0.788);
+    box-shadow: 0px 0px 6px 1px rgba(240, 201, 245, 0.51);
+}
+
+
+#add {
+    width: 10%;
+    border-radius: 5px;
+    border: none;
+    background-color: #7749f8;
+    transition: 0.2s;
+    outline: none;
+    color: white;
+    padding: 7px;
+}
+
+#add:hover {
+    background-color: #4e0d8b;
+    transition: 0.2s;
+}
+
+.button {
+    align-items: center;
+    border-bottom: 1px solid rgba(163, 161, 161, 0.108);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 100%;
+    /* background-color: rgb(241, 242, 242);? */
+}
+
+#all-task,
+#active-task,
+#completed-task {
+    padding: 7px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.all-task:hover {
+    color: #7749f8;
+    transition: 0.2s;
+}
+
+.out-put {
+    padding: auto 30px;
+    border-bottom: 1px solid rgba(163, 161, 161, 0.108);
+}
+
+.fooder {
+    /* padding: 8px; */
+    background-color: rgba(247, 249, 249, 0.725);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.clear,
+.task-count {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    outline: none;
+}
