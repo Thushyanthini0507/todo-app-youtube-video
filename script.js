@@ -10,20 +10,16 @@ const filters = document.querySelectorAll(".filter");
 let todos = [];
 let currentFilter = "all";
 
-// Add task button click
 addTaskBtn.addEventListener("click", () => {
   addTodo(taskInput.value);
 });
 
-// Press Enter to add task
 taskInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") addTodo(taskInput.value);
 });
 
-// Clear completed tasks
 clearCompletedBtn.addEventListener("click", clearCompleted);
 
-// Add todo
 function addTodo(text) {
   if (text.trim() === "") return;
 
